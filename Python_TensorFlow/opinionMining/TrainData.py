@@ -21,14 +21,14 @@ def generator(x):
 train_docs = np.load('train.npy', allow_pickle=True)
 # test_docs=np.load('test.npy', allow_pickle=True)
 
-# tokens = [t for d in train_docs for t in d[0]]
+tokens = [t for d in train_docs for t in d[0]]
 
 import nltk
 
-# text = nltk.Text(tokens, name='NMSC')
+text = nltk.Text(tokens, name='NMSC')
   
 selected_words = np.load('selected_words.npy', allow_pickle=True)
-# selected_words = [f[0] for f in text.vocab().most_common(2000)]
+selected_words = [f[0] for f in text.vocab().most_common(2000)]
  
 # print("Start")
 # np.save('selected_words', selected_words)

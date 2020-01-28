@@ -30,7 +30,7 @@ classifier = pickle.load(classifier_f)
 classifier_f.close()
 
 selected_words = np.load('selected_words.npy', allow_pickle=True)
-words = tokenize("나는 그저 그랬는데 친구는 좋아 하더라")
+words = tokenize("나는 그저 그랬는데 친구는 의외로 좋아 하더라")
 feats = term_exists(words)
 
 print(words)

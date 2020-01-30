@@ -18,10 +18,10 @@ def generator(x):
 
         i += 1
 
-# train_docs = np.load('train.npy', allow_pickle=True)
-test_docs=np.load('test.npy', allow_pickle=True)
+train_docs = np.load('train.npy', allow_pickle=True)
+# test_docs=np.load('test.npy', allow_pickle=True)
 
-tokens = [t for d in test_docs for t in d[0]]
+tokens = [t for d in train_docs for t in d[0]]
 
 import nltk
 
